@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ShieldCheck, Clock, Award, Users, ArrowRight } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 import { Hero } from "@/components/Hero";
 import { Stats } from "@/components/Stats";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -48,7 +50,9 @@ function Index() {
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.slice(0, 6).map((s, i) => (
-            <ServiceCard key={s.slug} service={s} index={i} />
+            <div key={s.slug} className={i >= 3 ? "hidden sm:block" : ""}>
+              <ServiceCard service={s} index={i} />
+            </div>
           ))}
         </div>
         <Reveal className="mt-10 text-center">
