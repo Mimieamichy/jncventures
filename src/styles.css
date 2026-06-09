@@ -1,0 +1,177 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-cyan: var(--cyan);
+  --color-emerald: var(--emerald);
+  --color-navy: var(--navy);
+  --font-sans: "Epilogue", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Urbanist", "Epilogue", sans-serif;
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Terminal Green on Ink — phosphor green over near-black */
+  --navy: #0b0f0c;
+  --cyan: #22c55e;
+  --emerald: #4ade80;
+
+  --background: #0b0f0c;
+  --foreground: #e7f6ea;
+
+  --card: #11160f;
+  --card-foreground: #e7f6ea;
+
+  --popover: #11160f;
+  --popover-foreground: #e7f6ea;
+
+  --primary: #22c55e;
+  --primary-foreground: #06120a;
+
+  --secondary: #161d18;
+  --secondary-foreground: #c8ffd4;
+
+  --muted: #161d18;
+  --muted-foreground: #7d967f;
+
+  --accent: #4ade80;
+  --accent-foreground: #06120a;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: rgba(74, 222, 128, 0.14);
+  --input: rgba(74, 222, 128, 0.18);
+  --ring: #22c55e;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility glass {
+  background: linear-gradient(
+    135deg,
+    rgba(74, 222, 128, 0.07),
+    rgba(74, 222, 128, 0.02)
+  );
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(74, 222, 128, 0.12);
+}
+
+@utility text-gradient {
+  background: linear-gradient(90deg, #4ade80, #22c55e 60%, #c8ffd4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility glow-cyan {
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.25),
+    0 0 45px -8px rgba(34, 197, 94, 0.5);
+}
+
+@utility grid-bg {
+  background-image:
+    linear-gradient(rgba(34, 197, 94, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 197, 94, 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* Terminal mono accent for labels/eyebrows */
+@utility mono-label {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Diagonal scan-line texture */
+@utility scanlines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(34, 197, 94, 0.05) 0px,
+    rgba(34, 197, 94, 0.05) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+/* Angular clipped panel — the broken-grid signature shape */
+@utility clip-panel {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 22px), calc(100% - 22px) 100%, 0 100%);
+}
+
+@utility clip-panel-alt {
+  clip-path: polygon(22px 0, 100% 0, 100% 100%, 0 100%, 0 22px);
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+
+@utility animate-float {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@utility animate-ticker {
+  animation: ticker 30s linear infinite;
+}
+
