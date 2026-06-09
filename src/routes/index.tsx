@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ShieldCheck, Clock, Award, Users, ArrowRight } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 import { Hero } from "@/components/Hero";
 import { Stats } from "@/components/Stats";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -32,6 +34,7 @@ const whyChoose = [
 ];
 
 function Index() {
+  const autoplay = useRef(Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true }));
   return (
     <>
       <Hero />
@@ -48,7 +51,9 @@ function Index() {
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.slice(0, 6).map((s, i) => (
-            <ServiceCard key={s.slug} service={s} index={i} />
+            <div key={s.slug} className={i >= 3 ? "hidden sm:block" : ""}>
+              <ServiceCard service={s} index={i} />
+            </div>
           ))}
         </div>
         <Reveal className="mt-10 text-center">
@@ -92,7 +97,7 @@ function Index() {
       <section className="grid-bg border-y border-border bg-card/30 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4">
           <SectionHeading eyebrow="Testimonials" title="Trusted by security leaders" />
-          <Carousel opts={{ align: "start", loop: true }} className="mt-12">
+          <Carousel opts={{ align: "start", loop: true }} plugins={[autoplay.current]} className="mt-12">
             <CarouselContent>
               {testimonials.map((t, i) => (
                 <CarouselItem key={t.name} className="md:basis-1/2 lg:basis-1/3">
