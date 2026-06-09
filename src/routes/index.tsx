@@ -97,7 +97,7 @@ function Index() {
       <section className="grid-bg border-y border-border bg-card/30 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4">
           <SectionHeading eyebrow="Testimonials" title="Trusted by security leaders" />
-          <Carousel opts={{ align: "start", loop: true }} className="mt-12">
+          <Carousel opts={{ align: "start", loop: true }} plugins={[autoplay.current]} className="mt-12">
             <CarouselContent>
               {testimonials.map((t, i) => (
                 <CarouselItem key={t.name} className="md:basis-1/2 lg:basis-1/3">
