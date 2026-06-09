@@ -34,6 +34,7 @@ const whyChoose = [
 ];
 
 function Index() {
+  const autoplay = useRef(Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true }));
   return (
     <>
       <Hero />
