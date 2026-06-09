@@ -127,7 +127,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <Navbar />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <main className="min-h-screen">
+      <main className="min-h-screen pb-24 md:pb-0">
         <Outlet />
       </main>
       <Footer />
