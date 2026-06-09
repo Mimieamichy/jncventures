@@ -106,7 +106,6 @@ function Index() {
               ))}
             </CarouselContent>
             <CarouselPrevious />
-            <CarouselNext />
           </Carousel>
         </div>
       </section>
