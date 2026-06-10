@@ -1,11 +1,7 @@
-# Netlify deploy config for TanStack Start (nitro)
+# Netlify deploy config for TanStack Start (nitro auto-detects the Netlify preset)
 [build]
-  command = "NITRO_PRESET=netlify vite build"
+  command = "vite build"
   publish = "dist"
 
 [build.environment]
-  NITRO_PRESET = "netlify"
   NODE_VERSION = "20"
-
-# nitro's netlify preset emits the server function and a publish dir;
-# leaving framework detection off so Netlify uses the command above as-is.
