@@ -19,18 +19,18 @@ import { services, testimonials, faqs, solutions } from "@/lib/site-data";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "JNC Venture — Protecting Your Digital Future" },
-      { name: "description", content: "Enterprise-grade cybersecurity and managed IT services: threat defense, 24/7 SOC monitoring, penetration testing, and cloud security." },
+      { title: "JNC Ventures — Protecting Your Digital Future" },
+      { name: "description", content: "Enterprise grade cybersecurity and managed IT support for businesses: security hardening, 24/7 SOC monitoring, disaster recovery, and business continuity." },
     ],
   }),
   component: Index,
 });
 
 const whyChoose = [
-  { icon: ShieldCheck, title: "Proactive Defense", desc: "We hunt threats before they become breaches, not after." },
+  { icon: ShieldCheck, title: "Proactive Defense", desc: "We hunt threats before they become breaches and cause business downtime, not after." },
   { icon: Clock, title: "24/7 Monitoring", desc: "Round-the-clock SOC coverage with rapid incident response." },
-  { icon: Award, title: "Certified Experts", desc: "CISSP, OSCP, and CEH certified security professionals." },
-  { icon: Users, title: "True Partnership", desc: "A dedicated team that integrates with your business." },
+  { icon: Award, title: "Certified Experts", desc: "CISM, OSCP, and CEH certified security professionals." },
+  { icon: Users, title: "True Partnership", desc: "A dedicated team that integrates with your business needs." },
 ];
 
 function Index() {
@@ -68,9 +68,9 @@ function Index() {
           <div>
             <SectionHeading
               center={false}
-              eyebrow="Why JNC Venture"
+              eyebrow="Why JNC Ventures"
               title="The security partner businesses trust"
-              subtitle="We combine elite expertise, modern technology, and relentless vigilance to keep you protected."
+              subtitle="We combine elite expertise, modern technology, and relentless vigilance to keep your business protected always."
             />
           </div>
           <div className="grid divide-y divide-border border-y border-border sm:grid-cols-2 sm:divide-y-0">

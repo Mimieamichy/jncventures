@@ -9,10 +9,10 @@ import { coreValues, leadership, certifications, partners } from "@/lib/site-dat
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About JNC Venture — Our Story & Mission" },
+      { title: "About JNC Ventures — Our Story & Mission" },
       { name: "description", content: "Learn about JNC Venture's story, mission, vision, core values, leadership team, certifications, and technology partners." },
-      { property: "og:title", content: "About JNC Venture" },
-      { property: "og:description", content: "A trusted cybersecurity partner committed to protecting businesses worldwide." },
+      { property: "og:title", content: "About JNC Ventures" },
+      { property: "og:description", content: "A trusted cybersecurity and IT partner committed to protecting businesses." },
     ],
   }),
   component: About,
@@ -24,8 +24,8 @@ function About() {
       <section className="mx-auto max-w-7xl px-4 py-12">
         <SectionHeading
           eyebrow="About Us"
-          title="A trusted cybersecurity partner"
-          subtitle="Founded by security veterans, JNC Venture exists to make enterprise-grade protection accessible to organizations of every size."
+          title="A trusted cybersecurity and IT partner"
+          subtitle="Founded by security experts, JNC Ventures exists to make enterprise-grade protection accessible to businesses of every size."
         />
       </section>
 
@@ -33,18 +33,18 @@ function About() {
         <Reveal className="glass rounded-3xl p-8 sm:p-12">
           <h2 className="text-2xl font-bold">Our Story</h2>
           <p className="mt-4 text-muted-foreground">
-            JNC Venture began in 2011 when a small team of penetration testers and IT engineers grew frustrated watching businesses fall victim to preventable breaches. We set out to build a security firm that combines the rigor of elite offensive security with the reliability of world-class managed IT.
+            JNC Ventures began in 2022 when a small team of security analysts and IT engineers grew frustrated watching businesses fall victim to preventable attacks. We set out to build a security firm that combines the rigor of elite offensive security with the reliability of world-class managed IT.
           </p>
           <p className="mt-4 text-muted-foreground">
-            Today, we protect over 500 organizations across finance, healthcare, government, and enterprise — preventing more than a million security incidents and operating a 24/7 Security Operations Center that never sleeps.
+            Today, we currently protect over 50 businesses — preventing hundreds of security incidents and operating a 24/7 Security Operations Center that never sleeps.
           </p>
         </Reveal>
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 md:grid-cols-2">
         {[
-          { icon: Target, title: "Our Mission", text: "To empower businesses to operate fearlessly by delivering proactive, intelligent, and relentless cybersecurity." },
-          { icon: Eye, title: "Our Vision", text: "A digital world where every organization, regardless of size, has access to elite-grade protection." },
+          { icon: Target, title: "Our Mission", text: "To empower businesses to operate fearlessly by delivering proactive, intelligent, and relentless IT support." },
+          { icon: Eye, title: "Our Vision", text: "A digital world where every business, regardless of size, has access to elite-grade IT protection." },
         ].map((b, i) => (
           <motion.div
             key={b.title}

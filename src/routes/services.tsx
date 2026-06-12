@@ -8,9 +8,9 @@ import { services } from "@/lib/site-data";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Cybersecurity & Managed IT | JNC Venture" },
-      { name: "description", content: "Explore JNC Venture services: cybersecurity, penetration testing, SOC monitoring, endpoint & email security, cloud security, managed IT, and more." },
-      { property: "og:title", content: "JNC Venture Services" },
+      { title: "Services — Cybersecurity & Managed IT | JNC Ventures" },
+      { name: "description", content: "Explore JNC Ventures services: cybersecurity, disaster recovery & business continuity, SOC monitoring, endpoint & email security, managed IT, and more." },
+      { property: "og:title", content: "JNC Ventures Services" },
       { property: "og:description", content: "Comprehensive cybersecurity and managed IT services for businesses of all sizes." },
     ],
   }),

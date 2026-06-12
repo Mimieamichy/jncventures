@@ -8,10 +8,10 @@ import { solutions } from "@/lib/site-data";
 export const Route = createFileRoute("/solutions")({
   head: () => ({
     meta: [
-      { title: "Solutions by Industry | JNC Venture" },
-      { name: "description", content: "Industry-specific cybersecurity solutions for financial institutions, healthcare, government, education, SMEs, and enterprise organizations." },
-      { property: "og:title", content: "JNC Venture Industry Solutions" },
-      { property: "og:description", content: "Tailored security programs for the unique risks of your industry." },
+      { title: "Solutions by Industry | JNC Ventures" },
+      { name: "description", content: "Industry-specific cybersecurity solutions for SMEs, healthcare, government, and education." },
+      { property: "og:title", content: "JNC Ventures Industry Solutions" },
+      { property: "og:description", content: "Tailored security programs for the unique risks of your business." },
     ],
   }),
   component: Solutions,
@@ -23,8 +23,8 @@ function Solutions() {
       <section className="mx-auto max-w-7xl px-4 py-12">
         <SectionHeading
           eyebrow="Industry Solutions"
-          title="Security tailored to your industry"
-          subtitle="Every sector faces unique threats and compliance demands. We build programs designed for yours."
+          title="Security tailored to your business"
+          subtitle="Every business faces unique threats and compliance demands. We build programs designed for yours."
         />
       </section>
 
@@ -57,7 +57,7 @@ function Solutions() {
         </div>
       </section>
 
-      <CTASection title="Need a tailored solution?" subtitle="Talk to our team about a security program designed around your industry's exact requirements." />
+      <CTASection title="Need a tailored solution?" subtitle="Talk to our team about a security program designed around your business's exact requirements." />
     </div>
   );
 }

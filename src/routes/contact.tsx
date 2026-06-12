@@ -7,9 +7,9 @@ import { Reveal } from "@/components/motion";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact JNC Venture — Get a Free Consultation" },
-      { name: "description", content: "Contact JNC Venture for cybersecurity and managed IT services. Request a free consultation or security assessment today." },
-      { property: "og:title", content: "Contact JNC Venture" },
+      { title: "Contact JNC Ventures — Get a Free Consultation" },
+      { name: "description", content: "Contact JNC Ventures for cybersecurity and managed IT services. Request a free consultation or security assessment today." },
+      { property: "og:title", content: "Contact JNC Ventures" },
       { property: "og:description", content: "Reach out for a free consultation with our security experts." },
     ],
   }),
@@ -17,8 +17,8 @@ export const Route = createFileRoute("/contact")({
 });
 
 const info = [
-  { icon: Mail, label: "Email", value: "hello@jncventure.com" },
-  { icon: Phone, label: "Phone", value: "+1 (555) 012-3456" },
+  { icon: Mail, label: "Email", value: "info@jncventure.com.ng" },
+  { icon: Phone, label: "Phone", value: "+234 90364 44782" },
   
   { icon: Clock, label: "Business Hours", value: "Mon–Fri 8am–6pm · SOC 24/7/365" },
 ];

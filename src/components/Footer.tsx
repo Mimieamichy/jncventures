@@ -16,9 +16,9 @@ const cols = [
     heading: "Services",
     links: [
       { to: "/services", label: "Cybersecurity" },
-      { to: "/services", label: "Penetration Testing" },
-      { to: "/services", label: "Managed IT" },
-      { to: "/services", label: "Cloud Security" },
+      { to: "/services", label: "Backups & Security Hardening" },
+      { to: "/services", label: "Personalised IT services" },
+      { to: "/services", label: "Disaster Recovery & Business Continuity" },
     ],
   },
 ] as const;
@@ -31,7 +31,7 @@ export function Footer() {
           <div className="space-y-4">
             <Logo />
             <p className="max-w-xs text-sm text-muted-foreground">
-              Protecting your digital future with enterprise-grade cybersecurity and managed IT services.
+              Protecting your businesses with enterprise-grade cybersecurity and managed IT services tailord for SMEs.
             </p>
             <div className="flex gap-3">
               {[Linkedin, Twitter, Github].map((Icon, i) => (
@@ -65,14 +65,14 @@ export function Footer() {
           <div>
             <h4 className="mb-4 text-sm font-semibold text-foreground">Get in Touch</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2"><Mail size={15} className="text-accent" /> hello@jncventure.com</li>
-              <li className="flex items-center gap-2"><Phone size={15} className="text-accent" /> +1 (555) 012-3456</li>
+              <li className="flex items-center gap-2"><Mail size={15} className="text-accent" /> info@jncventures.com.ng</li>
+              <li className="flex items-center gap-2"><Phone size={15} className="text-accent" /> +234-90364-44782</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} JNC Venture. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} JNC Ventures. All rights reserved.</p>
           <p>Privacy Policy · Terms of Service · Security</p>
         </div>
       </div>

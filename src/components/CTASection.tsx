@@ -9,7 +9,7 @@ interface CTASectionProps {
 
 export function CTASection({
   title = "Ready to secure your business?",
-  subtitle = "Talk to our experts and get a tailored security strategy built for your organization.",
+  subtitle = "Talk to our experts and get a tailored security strategy built for your business.",
 }: CTASectionProps) {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:py-20">

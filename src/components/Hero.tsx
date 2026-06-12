@@ -35,11 +35,11 @@ export function Hero() {
               transition={{ duration: 0.6 }}
               className="font-display text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl"
             >
-              We hunt threats
+              We protect your business from threats
               <br />
               <span className="text-gradient">before</span> they
               <br />
-              become breaches.
+              cause downtime.
             </motion.h1>
 
             <motion.p
@@ -48,9 +48,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-6 max-w-lg text-lg text-muted-foreground"
             >
-              JNC Venture is the security operations partner for teams that can't
-              afford downtime — penetration testing, 24/7 SOC monitoring, and
-              fully managed IT, engineered for resilience.
+              JNC Ventures is the security operations partner for businesses that can't
+              afford downtime — 24/7 SOC monitoring, and
+              fully managed IT support.
             </motion.p>
 
             <motion.div
@@ -63,7 +63,7 @@ export function Hero() {
                 to="/contact"
                 className="group inline-flex items-center gap-2 rounded-sm bg-primary px-7 py-3.5 font-semibold text-primary-foreground transition-all hover:glow-cyan"
               >
-                Book a Free Assessment
+                Book a Free Vulnerability Assessment
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </Link>
               <Link

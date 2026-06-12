@@ -12,7 +12,7 @@ export function SecurityAssessment() {
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">No obligation</span>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Request a Free Security Assessment</h2>
           <p className="mt-4 text-muted-foreground">
-            Get a complimentary external scan, a clear risk score, and a prioritized roadmap of recommendations from our security experts.
+            Get a complimentary low level vulnerability assessment, a clear risk score, and a personalised roadmap of recommendations from our security experts.
           </p>
           <Link to="/contact" className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all hover:glow-cyan">
             Get My Free Assessment <ArrowRight size={18} />

@@ -21,7 +21,7 @@ export function ContactForm() {
         <CheckCircle2 className="text-emerald" size={48} />
         <h3 className="mt-4 text-xl font-semibold">Thank you!</h3>
         <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-          Your message has been received. A JNC Venture security advisor will reach out within one business day.
+          Your message has been received. A JNC Ventures security advisor will reach out within one business day.
         </p>
       </motion.div>
     );
@@ -30,10 +30,10 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="glass space-y-4 rounded-2xl p-6 sm:p-8">
       <div className="grid gap-4 sm:grid-cols-2">
-        <Field label="Full Name" name="name" placeholder="Jane Doe" required />
+        <Field label="Full Name" name="name" placeholder="Ciroma Chukwu Ade" required />
         <Field label="Company" name="company" placeholder="Acme Inc." />
-        <Field label="Email" name="email" type="email" placeholder="jane@acme.com" required />
-        <Field label="Phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" />
+        <Field label="Email" name="email" type="email" placeholder="ciroma@acme.com" required />
+        <Field label="Phone" name="phone" type="tel" placeholder="+234 000 0000 000" />
       </div>
 
       <div className="space-y-1.5">
@@ -57,7 +57,7 @@ export function ContactForm() {
           name="message"
           rows={4}
           required
-          placeholder="Tell us about your security needs..."
+          placeholder="Tell us about your business security needs..."
           className="w-full rounded-xl border border-input bg-secondary/40 px-4 py-2.5 text-sm text-foreground outline-none placeholder:text-muted-foreground focus:border-accent"
         />
       </div>

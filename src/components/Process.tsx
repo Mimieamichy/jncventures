@@ -9,10 +9,10 @@ interface Step {
 }
 
 const steps: Step[] = [
-  { icon: Search, title: "Assess", desc: "We map your attack surface and identify system risks and vulnerabilities." },
-  { icon: Lock, title: "Secure", desc: "We implement zero-trust controls, hardening, and layered protection." },
-  { icon: RefreshCw, title: "Maintain", desc: "Continuous monitoring, patching, and optimization keep you resilient." },
-  { icon: Headset, title: "Support", desc: "A dedicated team on call 24/7 — rapid response when it matters most." },
+  { icon: Search, title: "Assess", desc: "We conduct a vulnerability assessment to identify system risks and vulnerabilities." },
+  { icon: Lock, title: "Secure", desc: "We implement zero-trust controls, hardening, and multi-layered protection." },
+  { icon: RefreshCw, title: "Maintain", desc: "Continuous monitoring, update patches, and optimization keeping your business running." },
+  { icon: Headset, title: "Support", desc: "A 24/7 dedicated team, personalised to each businesses — rapid response when it matters most." },
 ];
 
 export function Process() {
@@ -24,7 +24,7 @@ export function Process() {
           center={false}
           eyebrow="How we operate"
           title="A structured path to resilience"
-          subtitle="We follow a disciplined approach to keep your systems secure, stable, and efficient over time."
+          subtitle="We follow a disciplined approach to keep your business systems secure, and stable."
         />
 
         <div className="mt-14 grid gap-px overflow-hidden border border-border sm:grid-cols-2 lg:grid-cols-4">
